@@ -1,0 +1,22 @@
+<div class="container">
+  <div>
+    <h1>Account Login</h1>
+  </div>
+  <div>
+    <form action="/" method="POST">
+      <div class="form-group">
+        <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" name="password" placeholder="Password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+  </div>
+  {{#if msg}}
+  <div class="alert alert-danger mt-2" role="alert">
+    {{msg}}
+  </div>
+  {{/if}}
+
+</div>
